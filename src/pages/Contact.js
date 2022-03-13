@@ -29,13 +29,12 @@ function Contact() {
 
     function onClickFormDataHandler(e) {
         e.preventDefault()
-        // const x = [...formData]
         setFormData(
             [
                 ...formData, change
             ]
         )
-        // console.log(setFormData);
+
         setChange(
             {
                 name: "",
@@ -50,7 +49,7 @@ function Contact() {
             <div className="leftSide" style={{ backgroundImage: `url(${PizzaLeft})` }}></div>
             <div className="rightSide">
                 <h1>Contact Us</h1>
-                <form id="contact-form" >
+                <form id="contact-form">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" placeholder="Enter full name..." value={change.name} onChange={onChangeInputHandler} />
 
