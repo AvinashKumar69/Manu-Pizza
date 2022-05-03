@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import '../styles/Home.css';
 import BannerImage from '../assets/pizza.jpeg';
 
+
+
 const Home = () => {
 
     return (
